@@ -3,8 +3,3 @@
 node_modules/
 npm-debug.log
 yarn-error.log
-
-# project
-dist/
-env.js
-env.example.js 
