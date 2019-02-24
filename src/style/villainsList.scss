@@ -1,0 +1,68 @@
+.villains-container {
+    // height: 100vh;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // &__header {
+    //     display: flex;
+    //     height: 3rem;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     background-color: black;
+    //     color: white;
+    //     opacity: 0.5
+    // }
+}
+
+
+.villains-list-container {
+    // margin-left: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: flex-start;
+    color: white;
+}
+
+
+
+.villains-list {
+    padding: 4px;
+    margin: 4px;
+    border-radius: 2px;
+    // border-bottom:3px solid #d04ed6; 
+    background-color: rgba(255, 255, 255, 0.25);
+
+    // perspective: 150rem;
+    // -moz-perspective: 150rem;
+
+    &__front, 
+    &__back {
+        backface-visibility: hidden;
+        transition: all .3s ease;
+    }
+
+    &__back {
+        transform: rotateX(-180deg);
+    }
+
+    // &:hover &__front {
+    //     transform: rotateX(180deg);
+    // }
+    &:hover &__back {
+        transform: rotateX(0deg);
+    }
+
+
+    &__link {
+        color: white;
+    }
+
+    &__image {
+        max-width:50%;
+        max-height:100%;
+    }
+
+}
+

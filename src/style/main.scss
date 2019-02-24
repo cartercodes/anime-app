@@ -1,0 +1,58 @@
+// html {
+//     // font-size: 62.5%; // 1rem is 10px
+// }
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+    height: 100vh;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #0b8793, #360033);
+    background-size: cover;
+    
+}
+
+.app-body {
+    display: flex;
+    margin-top: 12rem;
+    justify-content: center;
+
+}
+
+.app-text {
+    display: flex;
+    // flex-direction: row;
+    justify-content: center;
+    color: white;
+
+    padding: 4px;
+    // margin-left: 20rem;
+    // margin-right: 20rem;
+    margin-top: 5px;
+    border-radius: 2px;
+    // border-bottom:3px solid #d04ed6; 
+    background-color: rgba(255, 255, 255, 0.25);
+
+}
+
+@import 'header';
+@import 'heroesList';
+@import 'villainsList';
