@@ -15,6 +15,9 @@ export default class App extends Component {
           <div className='header-container__villain'>
             <Link to='/villains'>Villains</Link>
           </div>
+          <div className='header-container__villain'>
+            <Link to='/uploads'>Upload</Link>
+          </div>
         </div>
       </div>
     )

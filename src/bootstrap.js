@@ -8,6 +8,7 @@ import App from './components/app';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
+import ImageUploader from './components/imageUploader/imageUpload';
 
 function main() {
   ReactDOM.render(
@@ -16,6 +17,7 @@ function main() {
         <Route exact path='/' component={App} />
         <Route path='/heroes' component={HeroList}/>
         <Route path='/villains' component={VillainList}/>
+        <Route path='/uploads' component={ImageUploader}/>
       </Switch>
     </BrowserRouter>
     , document.querySelector('.app-wrapper'));

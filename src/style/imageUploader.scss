@@ -1,0 +1,83 @@
+.upload-container {
+    // height: 100vh;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .upload-title {
+    display: flex;
+    // flex-direction: row;
+    justify-content: center;
+    color: white;
+
+    padding: 4px;
+    // margin-left: 20rem;
+    // margin-right: 20rem;
+    margin-top: 5px;
+    border-radius: 2px;
+    // border-bottom:3px solid #d04ed6; 
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  input[type="file"] {
+    background: linear-gradient(to bottom right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    margin-bottom: 20px;
+    border-radius: 18px;
+    border: 2px solid;
+    padding: 20px; 
+  }
+
+  button {
+    border: 1px solid;
+    border-radius: 4px;
+    color: #f7f7f7;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+  }
+
+  .loading-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: white;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-template-rows: 320px 320px 320px;
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .photo {
+    width: 100%;
+    
+    object-fit: cover;
+    background-color: #d5d5d5;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  }
